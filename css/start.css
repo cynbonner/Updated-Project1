@@ -51,7 +51,7 @@
 /*preset body and base elements*/
 
 body{
-	background-color: #EF6723;
+	background-color: #E0A1C0;
 	background-image: url(../img/hooray.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -100,7 +100,7 @@ h6{
 	background: #08a;
 	box-shadow:0px 0px 10px 3px rgba(0,0,0,.75);
 	text-transform: uppercase;
-	border-radius:50px;
+	border-radius:150px;
 	border: 2px solid #fff;
 }
 
@@ -114,7 +114,7 @@ color:#E0A1C0;
 header{
 	background:#000;
 	padding:15px;
-	border-bottom:10px double #E0A1C0;
+	border-bottom:5px solid #E0A1C0;
 }
 
 #logo {
@@ -147,10 +147,11 @@ nav a{
 	padding:5px 20px;
 	text-decoration: none;
 	display: block;
-	border-radius: 20px;
+	border-radius: 50px;
 	background: linear-gradient(#E0A1C0,#505);
 	text-align: center;
 }
+
 nav > ul > li:nth-child(5),
 nav > ul > li:nth-child(6),
 nav > ul > li:nth-child(7){
@@ -176,7 +177,7 @@ nav ul li:hover ul{
 nav ul li:hover ul li a{
 	display:block;
 	background:#000;
-	border-radius:20px;
+	border-radius:100px;
 	border:1px solid #c0c;
 	padding:10px;
 	margin:10px 0px;
@@ -242,7 +243,7 @@ nav li:hover a, nav ul li:hover ul li:hover a {
 	height: 250px;
 	display: inline-block;
 	vertical-align: top;
-	background-color: #8B2BA0;
+	background-color: #E0A1C0
 	margin: 10px;
 	padding: 20px;
 	box-shadow: 10px 10px 20px 2px rgba(0,0,0,.5);
@@ -281,12 +282,103 @@ img {
 	animation:iconflip 2s infinite;
 }
 
+/*subpage presets*/
+#title{
+	margin:20px;
+}
+
+/*About section*/
+.about{
+	max-width:250px;
+	margin:20px auto;
+	border: 5px;
+	border-left:none;
+}
+
+/*about style*/
+	
+.aboutimg, .abouttext{
+	display:block;
+	float:left;
+	clear:both;
+}
+
+#about div{
+	background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+	padding: 20px 20px 20px;
+}
+
+#about p{
+	margin: 10px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 40%; 
+    padding: 12px; /* Some padding */  
+    border: 10px solid; 
+    border-radius: 24px; /* Rounded borders */
+    box-sizing: border-box; 
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical 
+    text-align: left;
+}
+
+input[type=tel] {
+    width: 40%; 
+    padding: 12px; /* Some padding */  
+    border: 10px solid; 
+    border-radius: 24px; /* Rounded borders */
+    box-sizing: border-box; 
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical 
+    text-align: left;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* A magenta color over the submit button  */
+input[type=submit]:hover {
+    background-color: #c0c;
+}
+
+/* Add  some padding around the form */
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#contact{
+	padding: 100px 50px;
+	justify-content: center;
+	align-content: stretch;
+}
+
+#contact>div{
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+	
+	margin: 10px;
+	padding: 20px;
+	
+}
+
 /*footer styles*/
 footer{
 	background:#000;
-	padding:15px;
-	right:10px;
-	border-top:10px double #E0A1C0;
+	padding:0px;
+	width: 100%;
+	border-top:5px solid #E0A1C0;
 }
 
 #logo {
@@ -299,30 +391,4 @@ footer{
 }
 
 
-/*subpage presets*/
-#title{
-	margin:20px;
-}
 
-/*About section*/
-.about{
-	max-width:250px;
-	margin:20px auto;
-	border-radius: 0px 20px 20px 0px;
-	border: 5px #c0c;
-	border-left:none;
-}
-
-.aboutimg, .abouttext{
-	display:block;
-	float:left;
-}
-
-#about div{
-	background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
-	padding: 20px 20px 20px;
-}
-
-#about p{
-	margin: 10px;
-}
